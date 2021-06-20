@@ -97,9 +97,9 @@
               span.tooltip-text(v-show="!file.active") Click to show file details
 
             .tooltip
-                span {{ i + 1 }}. &nbsp;&nbsp; {{ file.path }} &nbsp;
-                span.tooltip-text(v-show="file.active") This is the file path. Click to hide file details &nbsp;
-                span.tooltip-text(v-show="!file.active") This is the file path. Click to show file details &nbsp;
+              span {{ i + 1 }}. &nbsp;&nbsp; {{ file.path }} &nbsp;
+              span.tooltip-text(v-show="file.active") This is the file path. Click to hide file details &nbsp;
+              span.tooltip-text(v-show="!file.active") This is the file path. Click to show file details &nbsp;
           span.icons
             a(
               v-bind:href="getFileLink(file, 'commits')", target="_blank"
